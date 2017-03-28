@@ -1,6 +1,6 @@
 {
     "exchange": {
-        "exchange_type": "flight_telemetry",
+        "exchange_type": "flight_logging",
         "message": {
             "aircraft": {
                 "aircraft_identification": [
@@ -18,13 +18,13 @@
                 "serial_number": "EP-00-00015",
                 "version": "0"
             },
-            "flight_telemetry": {
+            "flight_logging": {
                 "altitude_system": "WGS84",
-                "flight_telemetry_groups": {
+                "flight_logging_groups": {
                     "group_id": "operation-1",
                     "group_key": "1"
                 },
-                "flight_telemetry_items": [
+                "flight_logging_items": [
                     [
                         "0",
                         "6.6073",
@@ -10664,11 +10664,11 @@
                         "1"
                     ]
                 ],
-                "flight_telemetry_keys": [
+                "flight_logging_keys": [
                     "timestamp_increment",
-                    "gps_lon",
-                    "gps_lat",
-                    "gps_altitude",
+                    "gnss_lon",
+                    "gnss_lat",
+                    "gnss_altitude",
                     "speed_m/s",
                     "speed_vx",
                     "speed_vy",
@@ -10683,7 +10683,7 @@
                     "media_key",
                     "dtg_reset"
                 ],
-                "flight_telemetry_markers": [
+                "flight_logging_markers": [
                     {
                         "marker_key": "0",
                         "marker_text": "Aircraft on ground.",
@@ -10702,15 +10702,15 @@
                         "media_filename": "EP-00-00015_0132.bb3.json",
                         "media_key": "1",
                         "media_timestamp": "2017-03-13T07:39:31.694Z",
-                        "telemetry_type": "GUTMA_DX_JSON"
+                        "logging_type": "GUTMA_DX_JSON"
                     }
                 ],
-                "telemetry_start_dtg": "2017-03-10T13:16:47.900Z",
+                "logging_start_dtg": "2017-03-10T13:16:47.900Z",
                 "tick_increment_modulo": "1",
                 "tick_increment_seconds": "1",
                 "uom_system": "Metric"
             },
-            "message_type": "flight_telemetry_submission"
+            "message_type": "flight_logging_submission"
         }
     }
 }
