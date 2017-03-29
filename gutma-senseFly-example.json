@@ -10669,6 +10669,7 @@
                     "gnss_lon",
                     "gnss_lat",
                     "gnss_altitude",
+                    "sigma_x", "sigma_y", "sigma_z",
                     "speed_m/s",
                     "speed_vx",
                     "speed_vy",
