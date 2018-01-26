@@ -85,12 +85,12 @@ Here is a short message example:
                 },
                 "flight_logging": {
                     "flight_logging_items": [
-                        [ 0.5, 6.5431337999999997, 46.687659199999999, 100, 0 ],
-                        [ 1, 6.5429424000000003, 46.6879116, 110, 2  ],
-                        [ 1.5, 6.5429424000000003, 46.6879116, 100, 0 ]
+                        [ 0.5, 6.5431337999999997, 46.687659199999999, 100, 0, 0, 0, 0 ],
+                        [ 1, 6.5429424000000003, 46.6879116, 110, 2, 0, 0, 0 ],
+                        [ 1.5, 6.5429424000000003, 46.6879116, 100, 0, 0, 0, 0 ]
                     ],
                     "flight_logging_keys": [
-                        "timestamp", "gps_lon", "gps_lat", "gps_altitude", "speed"
+                        "timestamp", "gps_lon", "gps_lat", "gps_altitude", "speed", "speed_vx", "speed_vy", "battery_voltage"
                     ],
                     "event": [
                         {
@@ -100,13 +100,17 @@ Here is a short message example:
                         }
                     ],
                     "altitude_system": "WGS84",
-                    "logging_start_dtg": "2017-05-16T13:19:25.250Z"
+                    "logging_start_dtg": "2017-05-16T13:19:25.250Z",
+                    "tick_increment_modulo": "1",
+                    "tick_increment_seconds": "1",
+                    "uom_system": "Metric"
                 },
     
                 "file":  {
                     "logging_type": "GUTMA_DX_JSON",
                     "filename": "EB-99-01807_0069",
-                    "creation_dtg": "2017-05-23T08:38:41.306Z"
+                    "creation_dtg": "2017-05-23T08:38:41.306Z",
+                    "version": "1.0.0"
                 },
                 "message_type": "flight_logging_submission"
             }
@@ -151,12 +155,12 @@ Project is used to "tag" the flight or indicate if this flight is part of projec
 
     "flight_logging": {
     	"flight_logging_items": [
-    		[ 0.5, 6.5431337999999997, 46.687659199999999, 100, 0 ],
-    		[ 1, 6.5429424000000003, 46.6879116, 110, 2  ],
-    		[ 1.5, 6.5429424000000003, 46.6879116, 100, 0 ]
+    		[ 0.5, 6.5431337999999997, 46.687659199999999, 100, 0, 0, 0, 0 ],
+    		[ 1, 6.5429424000000003, 46.6879116, 110, 2, 0, 0, 0 ],
+    		[ 1.5, 6.5429424000000003, 46.6879116, 100, 0, 0, 0, 0 ]
     	],
     	"flight_logging_keys": [
-    		"timestamp", "gps_lon", "gps_lat", "gps_altitude", "speed"
+    		"timestamp", "gps_lon", "gps_lat", "gps_altitude", "speed", "speed_vx", "speed_vy", "battery_voltage"
     	],
     	"event": [
     		{
@@ -194,3 +198,4 @@ This section contains informations about the file itself. All fields are optiona
 * **logging_type**: type of logging
 * **filename**: filename, can be with extension
 * **creation_dtg**: file date creation
+* **version**: protocol version
