@@ -1,6 +1,6 @@
 # README #
 
-This protocol was approved for release to all GUTMA members during the Dec. 19 2017 board's meeting. It is currently out for member comments, with a final vote scheduled for the end of January. If approved by GUTMA members, the protocol will then be open to public comments.
+This protocol was approved for release to by GUTMA members on March 12 2018.  The protocol is open to public comments and contributions.
 
 ### Goals ###
 
